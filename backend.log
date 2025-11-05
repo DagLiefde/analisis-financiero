@@ -1,0 +1,970 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.udea:AnalisisFinanciero-back:jar:0.0.1-SNAPSHOT
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.springframework.boot:spring-boot-starter-security:jar -> duplicate declaration of version (?) @ line 99, column 15
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ------------------< com.udea:AnalisisFinanciero-back >------------------
+[INFO] Building AnalisisFinanciero-back 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.3.11:run (default-cli) > test-compile @ AnalisisFinanciero-back >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ AnalisisFinanciero-back ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ AnalisisFinanciero-back ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ AnalisisFinanciero-back ---
+[INFO] skip non existing resourceDirectory /Users/tomascadavid/Desktop/PI/AnalisisFinanciero_PI_1_Backend/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ AnalisisFinanciero-back ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< spring-boot:3.3.11:run (default-cli) < test-compile @ AnalisisFinanciero-back <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.3.11:run (default-cli) @ AnalisisFinanciero-back ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.3.11)
+
+2025-11-04T22:05:52.948-05:00  INFO 41947 --- [AnalisisFinanciero-back] [  restartedMain] c.u.A.AnalisisFinancieroBackApplication  : Starting AnalisisFinancieroBackApplication using Java 21.0.8 with PID 41947 (/Users/tomascadavid/Desktop/PI/AnalisisFinanciero_PI_1_Backend/target/classes started by tomascadavid in /Users/tomascadavid/Desktop/PI/AnalisisFinanciero_PI_1_Backend)
+2025-11-04T22:05:52.949-05:00  INFO 41947 --- [AnalisisFinanciero-back] [  restartedMain] c.u.A.AnalisisFinancieroBackApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-11-04T22:05:52.962-05:00  INFO 41947 --- [AnalisisFinanciero-back] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-04T22:05:52.962-05:00  INFO 41947 --- [AnalisisFinanciero-back] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-04T22:05:53.297-05:00  INFO 41947 --- [AnalisisFinanciero-back] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-04T22:05:53.318-05:00  INFO 41947 --- [AnalisisFinanciero-back] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 9 JPA repository interfaces.
+2025-11-04T22:05:53.590-05:00  INFO 41947 --- [AnalisisFinanciero-back] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-04T22:05:53.594-05:00  INFO 41947 --- [AnalisisFinanciero-back] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-04T22:05:53.594-05:00  INFO 41947 --- [AnalisisFinanciero-back] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-11-04T22:05:53.611-05:00  INFO 41947 --- [AnalisisFinanciero-back] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2025-11-04T22:05:53.612-05:00  INFO 41947 --- [AnalisisFinanciero-back] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 649 ms
+2025-11-04T22:05:53.710-05:00  INFO 41947 --- [AnalisisFinanciero-back] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-04T22:05:53.725-05:00  INFO 41947 --- [AnalisisFinanciero-back] [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-11-04T22:05:53.733-05:00  INFO 41947 --- [AnalisisFinanciero-back] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-04T22:05:53.810-05:00  INFO 41947 --- [AnalisisFinanciero-back] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-04T22:05:53.818-05:00  INFO 41947 --- [AnalisisFinanciero-back] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-04T22:05:53.856-05:00  INFO 41947 --- [AnalisisFinanciero-back] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@12ad33de
+2025-11-04T22:05:53.857-05:00  INFO 41947 --- [AnalisisFinanciero-back] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-04T22:05:53.868-05:00  WARN 41947 --- [AnalisisFinanciero-back] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-04T22:05:54.213-05:00  INFO 41947 --- [AnalisisFinanciero-back] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    alter table if exists clasificador_presupuestal 
+       alter column descripcion set data type TEXT
+2025-11-04T22:05:54.406-05:00  INFO 41947 --- [AnalisisFinanciero-back] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-04T22:05:54.602-05:00  INFO 41947 --- [AnalisisFinanciero-back] [  restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-11-04T22:05:54.788-05:00  INFO 41947 --- [AnalisisFinanciero-back] [  restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-11-04T22:05:54.789-05:00  WARN 41947 --- [AnalisisFinanciero-back] [  restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2025-11-04T22:05:54.872-05:00  WARN 41947 --- [AnalisisFinanciero-back] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-04T22:05:55.187-05:00  INFO 41947 --- [AnalisisFinanciero-back] [  restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoints beneath base path '/actuator'
+2025-11-04T22:05:55.416-05:00  INFO 41947 --- [AnalisisFinanciero-back] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-04T22:05:55.440-05:00  INFO 41947 --- [AnalisisFinanciero-back] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/api'
+2025-11-04T22:05:55.446-05:00  INFO 41947 --- [AnalisisFinanciero-back] [  restartedMain] c.u.A.AnalisisFinancieroBackApplication  : Started AnalisisFinancieroBackApplication in 2.597 seconds (process running for 2.718)
+Hibernate: 
+    select
+        count(*) 
+    from
+        estado e1_0 
+    where
+        e1_0.id_estado=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        estado e1_0 
+    where
+        e1_0.id_estado=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        estado e1_0 
+    where
+        e1_0.id_estado=?
+Hibernate: 
+    select
+        p1_0.permiso_id,
+        p1_0.descripcion,
+        p1_0.nombre_permiso 
+    from
+        permisos p1_0 
+    where
+        p1_0.nombre_permiso=?
+Hibernate: 
+    select
+        p1_0.permiso_id,
+        p1_0.descripcion,
+        p1_0.nombre_permiso 
+    from
+        permisos p1_0 
+    where
+        p1_0.nombre_permiso=?
+Hibernate: 
+    select
+        p1_0.permiso_id,
+        p1_0.descripcion,
+        p1_0.nombre_permiso 
+    from
+        permisos p1_0 
+    where
+        p1_0.nombre_permiso=?
+Hibernate: 
+    select
+        p1_0.permiso_id,
+        p1_0.descripcion,
+        p1_0.nombre_permiso 
+    from
+        permisos p1_0 
+    where
+        p1_0.nombre_permiso=?
+Hibernate: 
+    select
+        p1_0.permiso_id,
+        p1_0.descripcion,
+        p1_0.nombre_permiso 
+    from
+        permisos p1_0 
+    where
+        p1_0.nombre_permiso=?
+Hibernate: 
+    select
+        p1_0.permiso_id,
+        p1_0.descripcion,
+        p1_0.nombre_permiso 
+    from
+        permisos p1_0 
+    where
+        p1_0.nombre_permiso=?
+Hibernate: 
+    select
+        p1_0.permiso_id,
+        p1_0.descripcion,
+        p1_0.nombre_permiso 
+    from
+        permisos p1_0 
+    where
+        p1_0.nombre_permiso=?
+Hibernate: 
+    select
+        p1_0.permiso_id,
+        p1_0.descripcion,
+        p1_0.nombre_permiso 
+    from
+        permisos p1_0 
+    where
+        p1_0.nombre_permiso=?
+Hibernate: 
+    select
+        p1_0.permiso_id,
+        p1_0.descripcion,
+        p1_0.nombre_permiso 
+    from
+        permisos p1_0 
+    where
+        p1_0.nombre_permiso=?
+Hibernate: 
+    select
+        r1_0.rol_id,
+        r1_0.descripcion,
+        r1_0.nombre_rol 
+    from
+        roles r1_0 
+    where
+        r1_0.nombre_rol=?
+Hibernate: 
+    select
+        p1_0.rol_id,
+        p1_1.permiso_id,
+        p1_1.descripcion,
+        p1_1.nombre_permiso 
+    from
+        permisos_x_rol p1_0 
+    join
+        permisos p1_1 
+            on p1_1.permiso_id=p1_0.permiso_id 
+    where
+        p1_0.rol_id=?
+Hibernate: 
+    select
+        r1_0.rol_id,
+        r1_0.descripcion,
+        r1_0.nombre_rol 
+    from
+        roles r1_0 
+    where
+        r1_0.nombre_rol=?
+Hibernate: 
+    select
+        p1_0.permiso_id,
+        p1_0.descripcion,
+        p1_0.nombre_permiso 
+    from
+        permisos p1_0 
+    where
+        p1_0.nombre_permiso=?
+Hibernate: 
+    select
+        p1_0.permiso_id,
+        p1_0.descripcion,
+        p1_0.nombre_permiso 
+    from
+        permisos p1_0 
+    where
+        p1_0.nombre_permiso=?
+Hibernate: 
+    select
+        p1_0.permiso_id,
+        p1_0.descripcion,
+        p1_0.nombre_permiso 
+    from
+        permisos p1_0 
+    where
+        p1_0.nombre_permiso=?
+Hibernate: 
+    select
+        p1_0.permiso_id,
+        p1_0.descripcion,
+        p1_0.nombre_permiso 
+    from
+        permisos p1_0 
+    where
+        p1_0.nombre_permiso=?
+Hibernate: 
+    select
+        p1_0.permiso_id,
+        p1_0.descripcion,
+        p1_0.nombre_permiso 
+    from
+        permisos p1_0 
+    where
+        p1_0.nombre_permiso=?
+Hibernate: 
+    select
+        p1_0.permiso_id,
+        p1_0.descripcion,
+        p1_0.nombre_permiso 
+    from
+        permisos p1_0 
+    where
+        p1_0.nombre_permiso=?
+Hibernate: 
+    select
+        p1_0.permiso_id,
+        p1_0.descripcion,
+        p1_0.nombre_permiso 
+    from
+        permisos p1_0 
+    where
+        p1_0.nombre_permiso=?
+Hibernate: 
+    select
+        p1_0.permiso_id,
+        p1_0.descripcion,
+        p1_0.nombre_permiso 
+    from
+        permisos p1_0 
+    where
+        p1_0.nombre_permiso=?
+Hibernate: 
+    select
+        p1_0.permiso_id,
+        p1_0.descripcion,
+        p1_0.nombre_permiso 
+    from
+        permisos p1_0 
+    where
+        p1_0.nombre_permiso=?
+Hibernate: 
+    delete 
+    from
+        permisos_x_rol 
+    where
+        rol_id=?
+Hibernate: 
+    insert 
+    into
+        permisos_x_rol
+        (rol_id, permiso_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        permisos_x_rol
+        (rol_id, permiso_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        permisos_x_rol
+        (rol_id, permiso_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        permisos_x_rol
+        (rol_id, permiso_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        permisos_x_rol
+        (rol_id, permiso_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        permisos_x_rol
+        (rol_id, permiso_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        permisos_x_rol
+        (rol_id, permiso_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        permisos_x_rol
+        (rol_id, permiso_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        permisos_x_rol
+        (rol_id, permiso_id) 
+    values
+        (?, ?)
+Hibernate: 
+    select
+        r1_0.rol_id,
+        r1_0.descripcion,
+        r1_0.nombre_rol 
+    from
+        roles r1_0 
+    where
+        r1_0.nombre_rol=?
+Hibernate: 
+    select
+        p1_0.rol_id,
+        p1_1.permiso_id,
+        p1_1.descripcion,
+        p1_1.nombre_permiso 
+    from
+        permisos_x_rol p1_0 
+    join
+        permisos p1_1 
+            on p1_1.permiso_id=p1_0.permiso_id 
+    where
+        p1_0.rol_id=?
+Hibernate: 
+    select
+        r1_0.rol_id,
+        r1_0.descripcion,
+        r1_0.nombre_rol 
+    from
+        roles r1_0 
+    where
+        r1_0.nombre_rol=?
+Hibernate: 
+    select
+        p1_0.permiso_id,
+        p1_0.descripcion,
+        p1_0.nombre_permiso 
+    from
+        permisos p1_0 
+    where
+        p1_0.nombre_permiso=?
+Hibernate: 
+    select
+        p1_0.permiso_id,
+        p1_0.descripcion,
+        p1_0.nombre_permiso 
+    from
+        permisos p1_0 
+    where
+        p1_0.nombre_permiso=?
+Hibernate: 
+    select
+        p1_0.permiso_id,
+        p1_0.descripcion,
+        p1_0.nombre_permiso 
+    from
+        permisos p1_0 
+    where
+        p1_0.nombre_permiso=?
+Hibernate: 
+    delete 
+    from
+        permisos_x_rol 
+    where
+        rol_id=?
+Hibernate: 
+    insert 
+    into
+        permisos_x_rol
+        (rol_id, permiso_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        permisos_x_rol
+        (rol_id, permiso_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        permisos_x_rol
+        (rol_id, permiso_id) 
+    values
+        (?, ?)
+Hibernate: 
+    select
+        r1_0.rol_id,
+        r1_0.descripcion,
+        r1_0.nombre_rol 
+    from
+        roles r1_0 
+    where
+        r1_0.nombre_rol=?
+Hibernate: 
+    select
+        p1_0.rol_id,
+        p1_1.permiso_id,
+        p1_1.descripcion,
+        p1_1.nombre_permiso 
+    from
+        permisos_x_rol p1_0 
+    join
+        permisos p1_1 
+            on p1_1.permiso_id=p1_0.permiso_id 
+    where
+        p1_0.rol_id=?
+Hibernate: 
+    select
+        r1_0.rol_id,
+        r1_0.descripcion,
+        r1_0.nombre_rol 
+    from
+        roles r1_0 
+    where
+        r1_0.nombre_rol=?
+Hibernate: 
+    select
+        p1_0.permiso_id,
+        p1_0.descripcion,
+        p1_0.nombre_permiso 
+    from
+        permisos p1_0 
+    where
+        p1_0.nombre_permiso=?
+Hibernate: 
+    select
+        u1_0.usuario_id 
+    from
+        usuario u1_0 
+    where
+        u1_0.email=? 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        count(*) 
+    from
+        estado_clasificador ec1_0 
+    where
+        ec1_0.id_estado=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        estado_clasificador ec1_0 
+    where
+        ec1_0.id_estado=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        estado_clasificador ec1_0 
+    where
+        ec1_0.id_estado=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        centro_gestor cg1_0
+Hibernate: 
+    select
+        count(*) 
+    from
+        clasificador_presupuestal cp1_0
+Hibernate: 
+    delete 
+    from
+        permisos_x_rol 
+    where
+        rol_id=?
+Hibernate: 
+    insert 
+    into
+        permisos_x_rol
+        (rol_id, permiso_id) 
+    values
+        (?, ?)
+2025-11-04T22:05:56.477-05:00  INFO 41947 --- [AnalisisFinanciero-back] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-04T22:05:56.478-05:00  INFO 41947 --- [AnalisisFinanciero-back] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-04T22:05:56.479-05:00  INFO 41947 --- [AnalisisFinanciero-back] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+Hibernate: 
+    select
+        u1_0.usuario_id,
+        u1_0.apellido,
+        u1_0.documento,
+        u1_0.email,
+        u1_0.id_estado,
+        u1_0.fecha_registro,
+        u1_0.nombre,
+        u1_0.password,
+        u1_0.rol_id,
+        u1_0.telefono,
+        u1_0.ultimo_acceso 
+    from
+        usuario u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        r1_0.rol_id,
+        r1_0.descripcion,
+        r1_0.nombre_rol,
+        p1_0.rol_id,
+        p1_1.permiso_id,
+        p1_1.descripcion,
+        p1_1.nombre_permiso 
+    from
+        roles r1_0 
+    left join
+        permisos_x_rol p1_0 
+            on r1_0.rol_id=p1_0.rol_id 
+    left join
+        permisos p1_1 
+            on p1_1.permiso_id=p1_0.permiso_id 
+    where
+        r1_0.rol_id=?
+2025-11-04T22:06:17.425-05:00  WARN 41947 --- [AnalisisFinanciero-back] [nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.udea.AnalisisFinanciero_back.DTO.AuthResponse> com.udea.AnalisisFinanciero_back.controller.AuthController.login(com.udea.AnalisisFinanciero_back.DTO.AuthRequest): [Field error in object 'authRequest' on field 'password': rejected value [asdas]; codes [Size.authRequest.password,Size.password,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [authRequest.password,password]; arguments []; default message [password],2147483647,6]; default message [La contraseña debe tener al menos 6 caracteres]] ]
+Hibernate: 
+    select
+        u1_0.usuario_id,
+        u1_0.apellido,
+        u1_0.documento,
+        u1_0.email,
+        u1_0.id_estado,
+        u1_0.fecha_registro,
+        u1_0.nombre,
+        u1_0.password,
+        u1_0.rol_id,
+        u1_0.telefono,
+        u1_0.ultimo_acceso 
+    from
+        usuario u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        r1_0.rol_id,
+        r1_0.descripcion,
+        r1_0.nombre_rol,
+        p1_0.rol_id,
+        p1_1.permiso_id,
+        p1_1.descripcion,
+        p1_1.nombre_permiso 
+    from
+        roles r1_0 
+    left join
+        permisos_x_rol p1_0 
+            on r1_0.rol_id=p1_0.rol_id 
+    left join
+        permisos p1_1 
+            on p1_1.permiso_id=p1_0.permiso_id 
+    where
+        r1_0.rol_id=?
+Hibernate: 
+    select
+        u1_0.usuario_id,
+        u1_0.apellido,
+        u1_0.documento,
+        u1_0.email,
+        u1_0.id_estado,
+        u1_0.fecha_registro,
+        u1_0.nombre,
+        u1_0.password,
+        u1_0.rol_id,
+        u1_0.telefono,
+        u1_0.ultimo_acceso 
+    from
+        usuario u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        r1_0.rol_id,
+        r1_0.descripcion,
+        r1_0.nombre_rol,
+        p1_0.rol_id,
+        p1_1.permiso_id,
+        p1_1.descripcion,
+        p1_1.nombre_permiso 
+    from
+        roles r1_0 
+    left join
+        permisos_x_rol p1_0 
+            on r1_0.rol_id=p1_0.rol_id 
+    left join
+        permisos p1_1 
+            on p1_1.permiso_id=p1_0.permiso_id 
+    where
+        r1_0.rol_id=?
+Hibernate: 
+    select
+        u1_0.usuario_id,
+        u1_0.apellido,
+        u1_0.documento,
+        u1_0.email,
+        u1_0.id_estado,
+        u1_0.fecha_registro,
+        u1_0.nombre,
+        u1_0.password,
+        u1_0.rol_id,
+        u1_0.telefono,
+        u1_0.ultimo_acceso 
+    from
+        usuario u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.usuario_id,
+        u1_0.apellido,
+        u1_0.documento,
+        u1_0.email,
+        u1_0.id_estado,
+        u1_0.fecha_registro,
+        u1_0.nombre,
+        u1_0.password,
+        u1_0.rol_id,
+        u1_0.telefono,
+        u1_0.ultimo_acceso 
+    from
+        usuario u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        r1_0.rol_id,
+        r1_0.descripcion,
+        r1_0.nombre_rol,
+        p1_0.rol_id,
+        p1_1.permiso_id,
+        p1_1.descripcion,
+        p1_1.nombre_permiso 
+    from
+        roles r1_0 
+    left join
+        permisos_x_rol p1_0 
+            on r1_0.rol_id=p1_0.rol_id 
+    left join
+        permisos p1_1 
+            on p1_1.permiso_id=p1_0.permiso_id 
+    where
+        r1_0.rol_id=?
+2025-11-04T22:07:06.749-05:00  INFO 41947 --- [AnalisisFinanciero-back] [nio-8080-exec-6] c.u.A.service.CentroGestorService        : Buscando centro gestor por código: CG002
+Hibernate: 
+    select
+        cg1_0.centro_gestor_id,
+        cg1_0.codigo,
+        cg1_0.nombre_centro_gestor 
+    from
+        centro_gestor cg1_0 
+    where
+        cg1_0.codigo=?
+2025-11-04T22:07:06.753-05:00  INFO 41947 --- [AnalisisFinanciero-back] [nio-8080-exec-6] c.u.A.service.CentroGestorService        : Centro gestor encontrado: Centro de Gestión Administrativa
+Hibernate: 
+    select
+        u1_0.usuario_id,
+        u1_0.apellido,
+        u1_0.documento,
+        u1_0.email,
+        u1_0.id_estado,
+        u1_0.fecha_registro,
+        u1_0.nombre,
+        u1_0.password,
+        u1_0.rol_id,
+        u1_0.telefono,
+        u1_0.ultimo_acceso 
+    from
+        usuario u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        r1_0.rol_id,
+        r1_0.descripcion,
+        r1_0.nombre_rol,
+        p1_0.rol_id,
+        p1_1.permiso_id,
+        p1_1.descripcion,
+        p1_1.nombre_permiso 
+    from
+        roles r1_0 
+    left join
+        permisos_x_rol p1_0 
+            on r1_0.rol_id=p1_0.rol_id 
+    left join
+        permisos p1_1 
+            on p1_1.permiso_id=p1_0.permiso_id 
+    where
+        r1_0.rol_id=?
+2025-11-04T22:07:06.782-05:00  WARN 41947 --- [AnalisisFinanciero-back] [nio-8080-exec-7] .A.s.DetallePonderadoCentroGestorService : Usando método deprecado guardarDetalle. Usar create() en su lugar.
+2025-11-04T22:07:06.783-05:00  INFO 41947 --- [AnalisisFinanciero-back] [nio-8080-exec-7] c.u.A.s.BaseDetallePonderadoService      : Creando nuevo DetallePonderadoCentroGestor
+Hibernate: 
+    select
+        cg1_0.centro_gestor_id,
+        cg1_0.codigo,
+        cg1_0.nombre_centro_gestor 
+    from
+        centro_gestor cg1_0 
+    where
+        cg1_0.centro_gestor_id=?
+Hibernate: 
+    insert 
+    into
+        detalle_ponderadoxcentro_gestor
+        (abril, agosto, centro_gestor_id, diciembre, enero, febrero, julio, junio, marzo, mayo, noviembre, octubre, septiembre, total) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+    returning detalle_ponderado_id
+2025-11-04T22:07:06.795-05:00  INFO 41947 --- [AnalisisFinanciero-back] [nio-8080-exec-7] c.u.A.s.BaseDetallePonderadoService      : DetallePonderadoCentroGestor creado exitosamente con ID: -1240744154
+2025-11-04T22:07:06.796-05:00  WARN 41947 --- [AnalisisFinanciero-back] [nio-8080-exec-7] .A.s.DetallePonderadoCentroGestorService : Usando método deprecado convertirEntidadADTO. Usar mapToDTO() en su lugar.
+Hibernate: 
+    select
+        u1_0.usuario_id,
+        u1_0.apellido,
+        u1_0.documento,
+        u1_0.email,
+        u1_0.id_estado,
+        u1_0.fecha_registro,
+        u1_0.nombre,
+        u1_0.password,
+        u1_0.rol_id,
+        u1_0.telefono,
+        u1_0.ultimo_acceso 
+    from
+        usuario u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        r1_0.rol_id,
+        r1_0.descripcion,
+        r1_0.nombre_rol,
+        p1_0.rol_id,
+        p1_1.permiso_id,
+        p1_1.descripcion,
+        p1_1.nombre_permiso 
+    from
+        roles r1_0 
+    left join
+        permisos_x_rol p1_0 
+            on r1_0.rol_id=p1_0.rol_id 
+    left join
+        permisos p1_1 
+            on p1_1.permiso_id=p1_0.permiso_id 
+    where
+        r1_0.rol_id=?
+Hibernate: 
+    select
+        u1_0.usuario_id,
+        u1_0.apellido,
+        u1_0.documento,
+        u1_0.email,
+        u1_0.id_estado,
+        u1_0.fecha_registro,
+        u1_0.nombre,
+        u1_0.password,
+        u1_0.rol_id,
+        u1_0.telefono,
+        u1_0.ultimo_acceso 
+    from
+        usuario u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        r1_0.rol_id,
+        r1_0.descripcion,
+        r1_0.nombre_rol,
+        p1_0.rol_id,
+        p1_1.permiso_id,
+        p1_1.descripcion,
+        p1_1.nombre_permiso 
+    from
+        roles r1_0 
+    left join
+        permisos_x_rol p1_0 
+            on r1_0.rol_id=p1_0.rol_id 
+    left join
+        permisos p1_1 
+            on p1_1.permiso_id=p1_0.permiso_id 
+    where
+        r1_0.rol_id=?
+Hibernate: 
+    select
+        u1_0.usuario_id,
+        u1_0.apellido,
+        u1_0.documento,
+        u1_0.email,
+        u1_0.id_estado,
+        u1_0.fecha_registro,
+        u1_0.nombre,
+        u1_0.password,
+        u1_0.rol_id,
+        u1_0.telefono,
+        u1_0.ultimo_acceso 
+    from
+        usuario u1_0 
+    where
+        u1_0.email=?
+2025-11-04T22:08:47.370-05:00  WARN 41947 --- [AnalisisFinanciero-back] [nio-8080-exec-1] o.s.web.servlet.PageNotFound             : Request method 'GET' is not supported
+2025-11-04T22:08:47.372-05:00  WARN 41947 --- [AnalisisFinanciero-back] [nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+Hibernate: 
+    select
+        u1_0.usuario_id,
+        u1_0.apellido,
+        u1_0.documento,
+        u1_0.email,
+        u1_0.id_estado,
+        u1_0.fecha_registro,
+        u1_0.nombre,
+        u1_0.password,
+        u1_0.rol_id,
+        u1_0.telefono,
+        u1_0.ultimo_acceso 
+    from
+        usuario u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        r1_0.rol_id,
+        r1_0.descripcion,
+        r1_0.nombre_rol,
+        p1_0.rol_id,
+        p1_1.permiso_id,
+        p1_1.descripcion,
+        p1_1.nombre_permiso 
+    from
+        roles r1_0 
+    left join
+        permisos_x_rol p1_0 
+            on r1_0.rol_id=p1_0.rol_id 
+    left join
+        permisos p1_1 
+            on p1_1.permiso_id=p1_0.permiso_id 
+    where
+        r1_0.rol_id=?
+2025-11-04T22:09:56.680-05:00  INFO 41947 --- [AnalisisFinanciero-back] [nio-8080-exec-5] c.u.A.service.CentroGestorService        : Buscando centro gestor por código: CG004
+Hibernate: 
+    select
+        cg1_0.centro_gestor_id,
+        cg1_0.codigo,
+        cg1_0.nombre_centro_gestor 
+    from
+        centro_gestor cg1_0 
+    where
+        cg1_0.codigo=?
+2025-11-04T22:09:56.684-05:00  INFO 41947 --- [AnalisisFinanciero-back] [nio-8080-exec-5] c.u.A.service.CentroGestorService        : Centro gestor encontrado: Centro de Gestión de Recursos Humanos
+Hibernate: 
+    select
+        u1_0.usuario_id,
+        u1_0.apellido,
+        u1_0.documento,
+        u1_0.email,
+        u1_0.id_estado,
+        u1_0.fecha_registro,
+        u1_0.nombre,
+        u1_0.password,
+        u1_0.rol_id,
+        u1_0.telefono,
+        u1_0.ultimo_acceso 
+    from
+        usuario u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        r1_0.rol_id,
+        r1_0.descripcion,
+        r1_0.nombre_rol,
+        p1_0.rol_id,
+        p1_1.permiso_id,
+        p1_1.descripcion,
+        p1_1.nombre_permiso 
+    from
+        roles r1_0 
+    left join
+        permisos_x_rol p1_0 
+            on r1_0.rol_id=p1_0.rol_id 
+    left join
+        permisos p1_1 
+            on p1_1.permiso_id=p1_0.permiso_id 
+    where
+        r1_0.rol_id=?
+2025-11-04T22:09:56.702-05:00  WARN 41947 --- [AnalisisFinanciero-back] [nio-8080-exec-6] .A.s.DetallePonderadoCentroGestorService : Usando método deprecado guardarDetalle. Usar create() en su lugar.
+2025-11-04T22:09:56.703-05:00  INFO 41947 --- [AnalisisFinanciero-back] [nio-8080-exec-6] c.u.A.s.BaseDetallePonderadoService      : Creando nuevo DetallePonderadoCentroGestor
+Hibernate: 
+    select
+        cg1_0.centro_gestor_id,
+        cg1_0.codigo,
+        cg1_0.nombre_centro_gestor 
+    from
+        centro_gestor cg1_0 
+    where
+        cg1_0.centro_gestor_id=?
+Hibernate: 
+    insert 
+    into
+        detalle_ponderadoxcentro_gestor
+        (abril, agosto, centro_gestor_id, diciembre, enero, febrero, julio, junio, marzo, mayo, noviembre, octubre, septiembre, total) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+    returning detalle_ponderado_id
+2025-11-04T22:09:56.706-05:00  INFO 41947 --- [AnalisisFinanciero-back] [nio-8080-exec-6] c.u.A.s.BaseDetallePonderadoService      : DetallePonderadoCentroGestor creado exitosamente con ID: -2141060694
+2025-11-04T22:09:56.706-05:00  WARN 41947 --- [AnalisisFinanciero-back] [nio-8080-exec-6] .A.s.DetallePonderadoCentroGestorService : Usando método deprecado convertirEntidadADTO. Usar mapToDTO() en su lugar.
+2025-11-04T22:14:03.964-05:00  INFO 41947 --- [AnalisisFinanciero-back] [nio-8080-exec-5] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 227 ms
+2025-11-04T22:14:42.210-05:00  INFO 41947 --- [AnalisisFinanciero-back] [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-04T22:14:42.212-05:00  INFO 41947 --- [AnalisisFinanciero-back] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-04T22:14:42.213-05:00  INFO 41947 --- [AnalisisFinanciero-back] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
