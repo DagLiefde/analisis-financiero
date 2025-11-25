@@ -53,7 +53,7 @@ fi
 
 # Iniciar Backend
 echo -e "${BLUE}📦 Iniciando Backend...${NC}"
-cd AnalisisFinanciero_PI_1_Backend
+cd Backend
 
 if [ -f "./mvnw" ]; then
     ./mvnw spring-boot:run > ../backend.log 2>&1 &
@@ -87,9 +87,9 @@ cd ..
 
 # Verificar archivo .env del frontend
 echo -e "${BLUE}🎨 Configurando Frontend...${NC}"
-if [ ! -f "Frontend/AnalisisFinanciero_PI_1_Frontend/.env" ]; then
+if [ ! -f "Frontend/.env" ]; then
     echo -e "${YELLOW}⚠️  Archivo .env no encontrado. Creando...${NC}"
-    cat > Frontend/AnalisisFinanciero_PI_1_Frontend/.env << EOF
+    cat > Frontend/.env << EOF
 # Configuración del Backend API
 VITE_API_URL=http://localhost:8080/api
 
@@ -104,7 +104,7 @@ fi
 
 # Iniciar Frontend
 echo -e "${BLUE}🎨 Iniciando Frontend...${NC}"
-cd Frontend/AnalisisFinanciero_PI_1_Frontend
+cd Frontend
 
 # Instalar dependencias si no existen
 if [ ! -d "node_modules" ]; then
